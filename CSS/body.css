@@ -1,0 +1,77 @@
+/*
+TABLETA DE COLORES
+
+GRIS
+10% #E5E5E5
+20% #CCCCCC
+90$ #1A1A1A
+DORADO
+#FFCC00
+#996600
+
+CONCHEVINO
+#4D1A00
+*/
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+@font-face{
+    font-family:'Text-Gyre-Adventor-Regular';
+    src: url('../Sources/Fonts/texgyreadventor-regular.otf');
+}
+body {
+    font-family: 'Text-Gyre-Adventor-Regular','Roboto', sans-serif;
+    color: #1A1A1A;
+    background-color: #E5E5E5;
+    position: relative;
+    top: 30px;
+}
+
+ul.nav-pills {
+    top: 30px;
+    position: fixed;
+}
+div.col-sm-9 div {
+    border-radius: 5px;
+    border: 3px solid #ffcc00;
+    background-color: #CCCCCC;
+    font-size: 1.3rem;
+    padding: 5px;
+    left: 5px;
+}
+
+p{
+    display:  inline-block;
+}
+ul.none{
+    list-style-type: none;
+    margin-left: 20px;
+}
+#section1{
+    text-align: center;
+}
+.nav{
+    border-radius: 5px;
+    border: 3px solid #ffcc00;
+    background-color: #CCCCCC;
+}
+
+nav ul li.current{
+    background-color: red;
+    color:aqua;
+}
+
+@media screen and (max-width: 810px) {
+    #section1, #section21, #section22, #section31, #section32, #section4  {
+        margin-left: 150px;
+        z-index: 1;
+    }
+
+    ul.nav-pills {
+        top: 30px;
+        position: fixed;
+        z-index: 2;
+    }
+}

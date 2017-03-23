@@ -6,34 +6,134 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="JS/firstSources.js"></script>
         <title>Elem3ntal Development</title>
     </head>
-    <body>
+    <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 
-        <header>
-            <!-- header content goes in here -->
-        </header>
+        <div class="container">
+            <div class="row">
+                <nav class="col-sm-3" id="myScrollspy">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="#section1">About Me</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Skills<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#section21">Soft</a></li>
+                                <li><a href="#section22">Hard</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Experience <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#section31">PIA</a></li>
+                                <li><a href="#section32">Padron</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#section4">Formation</a></li>
+                    </ul>
+                </nav>
+                <div class="col-sm-9">
+                    <div id="section1">
 
-        <nav>
-            <!-- navigation menu goes in here -->
-        </nav>
+                        <h1>
+                            <img src="Resources/Images/Perfil1280.jpg" class="img-thumbnail img-circle" alt="MeIn1280" width="100" height="100"> About me?
+                        </h1>
+                        <p>Javier Rodríguez B.</p>
+                        <br>
+                        <p>+56 9 9940 2264</p>
+                        <a>javier08@hotmail.com</a>
+                        <br>
+                        <p>Quilicura, Santiago, Chile</p>
+                    </div>
+                    <hr>
 
-        <section id="sidebar1">
-            <!-- sidebar content goes in here -->
-        </section>
+                    <div id="section21">
+                        <h1>Soft Skills</h1>
+                        <ul class='none'>
+                            <li>Teamwork</li>
+                            <li>Creativity</li>
+                            <li>Integrity</li>
+                            <li>Communication</li>
+                            <li>Adaptability</li>
+                            <li>Emotional Intelligence</li>
+                        </ul>
+                        <p>Language</p>
+                        <ul class='none'>
+                            <li><a>Spanish - Mother tongue</a></li>
+                            <li>English - intermediate level</li>
+                        </ul>
 
-        <section id="main">
-            <!-- main page content goes in here -->
-        </section>
+                        <p>Hobbies</p>
+                        <ul class='none'>
+                            <li>Cycling (With Team)</li>
+                            <li>Trekking (With Family - Friends)</li>
+                            <li>Outdoor Stuff</li>
+                        </ul>
+                        <p>Participation in Guides and Scout of Chile</p>
+                        <a id="translate">(Guías y Scout de Chile)</a>
+                        <ul class='none'>
+                            <li>(2008-2010) Beneficiary Member</li>
+                            <li>(2010-2015) Assistant - Responsible</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div id="section22">
+                        <h1>Hard Skills</h1>
+                        <p>Experience in design and implementation in systems for windows and linux, for desktop and web, with IIS or LAMP depends of the solution and the necessity of the customer.</p>
+                        <p>Lenguages</p>
+                        <ul class='none'>
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>C#</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                        </ul>
+                        <p>web</p>
+                        <ul  class='none'>
+                            <li>HTML 5</li>
+                            <li>PHP 5 - 7</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>JavaEE</li>
+                            <li>ASP.Net - WCF</li>
+                        </ul>
+                        <p>DataBase (relational)</p>
+                        <ul class='none'>
+                            <li>MySQL</li>
+                            <li>SQLite</li>
+                        </ul>
+                        <p>O.S.</p>
+                        <ul  class='none'>
+                            <li>Linux (Server and Desktop)</li>
+                            <li>Windows</li>
+                        </ul>
+                        <p>Version Control System</p>
+                        <ul class='none'>
+                            <li>GIT</li>
+                        </ul>
+                    </div>
+                    <hr>
 
-        <aside>
-            <!-- aside content goes in here -->
-        </aside>
+                    <div id="section31">
+                        <h1>P.I.A.</h1>
+                        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                    </div>
+                    <hr>
+                    <div id="section32">
+                        <h1>Padron</h1>
+                        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                    </div>
+                    <hr>
 
-        <footer>
-            <p>Site Under Construccion</p>
-            <!-- footer content goes in here -->
-        </footer>
+                    <div id="section4">
+                        <h1>Formation</h1>
+                        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                    </div>
+                    <hr>
 
+                </div>
+            </div>
+        </div>
     </body>
 </html>
