@@ -16,6 +16,8 @@ function loadjscssfile(filename, filetype) {
     }
 }
 //
-var master=true;
 //SOURCE FILES
-loadjscssfile("CSS/body.css","css");
+loadjscssfile("/CSS/body.css","css");
+loadjscssfile("/JS/Android.js","js");
+loadjscssfile("/JS/leaveAMessage.js","js");
+loadjscssfile("/JS/registerVisit.js","js");

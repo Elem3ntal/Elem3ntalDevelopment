@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="JS/firstSources.js"></script>
+        <script src="/JS/firstSources.js"></script>
         <title>Elem3ntal Development</title>
     </head>
     <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
@@ -31,6 +31,7 @@
                             </ul>
                         </li>
                         <li><a href="#section4">Formation</a></li>
+                        <li><a href="#section5">Leave a Message</a></li>
                     </ul>
                 </nav>
                 <div class="col-sm-9">
@@ -41,10 +42,15 @@
                         </h1>
                         <p>Javier Rodríguez B.</p>
                         <br>
-                        <p>+56 9 9940 2264</p>
+                        <a id="whatsapp">+56 9 9940 2264</a>
                         <a>javier08@hotmail.com</a>
                         <br>
                         <p>Quilicura, Santiago, Chile</p>
+                        <br>
+                        <a class="btn btn-default" role="button" href="https://www.facebook.com/JavierRodriguezBenavente" target="_blank">Facebook</a>
+                        <a class="btn btn-default" href="https://www.linkedin.com/in/javier-rodriguez-66834b70/" target="_blank">LinkedIn</a>
+                        <br>
+                        <a class="btn btn-default" href="https://github.com/Elem3ntal" target="_blank">GitHub </a>
                     </div>
                     <hr>
 
@@ -92,9 +98,10 @@
                         <p>web</p>
                         <ul  class='none'>
                             <li>HTML 5</li>
-                            <li>PHP 5 - 7</li>
                             <li>CSS</li>
+                            <li>Bootstrap</li>
                             <li>Javascript</li>
+                            <li>PHP 5 - 7</li>
                             <li>JavaEE</li>
                             <li>ASP.Net - WCF</li>
                         </ul>
@@ -110,7 +117,7 @@
                         </ul>
                         <p>Version Control System</p>
                         <ul class='none'>
-                            <li>GIT</li>
+                            <li>GitHub <a href="https://github.com/Elem3ntal" target="_blank">Click me!!</a></li>
                         </ul>
                     </div>
                     <hr>
@@ -131,6 +138,23 @@
                         <p>Try to scroll this section and look at the navigation list while scrolling!</p>
                     </div>
                     <hr>
+
+                    <div id="section5">
+                        <h1>Leave a Message</h1>
+                        <p>If you have a doubt or wanna contact me, can leave a message, this is a function in php/mysql that auto sends me a email (with copy to you)</p>
+                        <br><p>Best Regards!</p>
+                        <br><p>Javier</p>
+                        <section id="messageBox">
+                            <p>From: </p><input type = "text" id="email" class = "box" placeholder='email@hosting.com'/>
+                            <br>
+                            <textarea id = "message" rows="4" cols="50" placeholder="your message goes here!"></textarea>
+                            <a class="btn btn-default" onclick="sendMessage();">SEND!</a>
+                            <div class="alert alert-success">
+                                <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                                <strong>Succes!</strong>Message has been sent!
+                            </div>
+                        </section>
+                    </div>
 
                 </div>
             </div>
