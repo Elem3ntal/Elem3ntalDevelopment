@@ -8,6 +8,5 @@ if($variable[0]!=""){
     $sql = "SELECT dejarMensaje('".$email."','".$text."');";
     $result = mysqli_query($db,$sql);
     $row = mysqli_fetch_array($result);
-
 }
 ?>

@@ -35,36 +35,20 @@
                 </nav>
                 <div class="col-sm-9">
                     <div id="section1">
-
                         <h1>
-                            <img src="Resources/Images/Perfil1280.jpg" class="img-thumbnail img-circle" alt="MeIn1280" width="100" height="100"> About me?
+                            <img src="Sources/Images/Perfil1280.jpg" class="img-thumbnail img-circle" alt="MeIn1280" width="100" height="100"> About me?
                         </h1>
                         <p>Javier Rodríguez B.</p>
                         <br>
                         <a id="whatsapp">+56 9 9940 2264</a>
                         <a>javier08@hotmail.com</a>
                         <br>
-                        <a type="button" class="btn btn-info" data-toggle="collapse" data-target="#map">Quilicura, Santiago, Chile</a>
-                        <div id="map" class="collapse row" style="width:90%;height:500px"></div>
-                        <script>
-                            function myMap() {
-                                var quilicura = new google.maps.LatLng(-33.353808, -70.729574);
-                                var mapCanvas = document.getElementById("map");
-                                var mapOptions = {center: quilicura, zoom: 11};
-                                var map = new google.maps.Map(mapCanvas,mapOptions);
-                                var myCity = new google.maps.Circle({
-                                    center: quilicura,
-                                    radius: 2100,
-                                    strokeColor: "#0000FF",
-                                    strokeOpacity: 0.8,
-                                    strokeWeight: 2,
-                                    fillColor: "#0000FF",
-                                    fillOpacity: 0.4
-                                });
-                                myCity.setMap(map);
-                            }
-                        </script>
-                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmvQXoYGk07W57_3q_3v6u5TDQCtNHfLE&callback=myMap"></script>
+                        <a type="button" class="btn btn-info" data-toggle="collapse" data-target="#containerMap">Quilicura, Santiago, Chile</a>
+                        <div id="containerMap" class="collapse row" style="width:90%;height:500px">
+                            <iframe id="map" style="width:100%;height:500px"
+                                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCmvQXoYGk07W57_3q_3v6u5TDQCtNHfLE&q=Quilicura,Chile"
+                                    ></iframe>
+                        </div>
                         <br>
                         <a class="btn btn-default" role="button" href="https://www.facebook.com/JavierRodriguezBenavente" target="_blank">Facebook</a>
                         <a class="btn btn-default" href="https://www.linkedin.com/in/javier-rodriguez-66834b70/" target="_blank">LinkedIn</a>
@@ -85,7 +69,7 @@
                         </ul>
                         <p>Language</p>
                         <ul class='none'>
-                            <li><a>Spanish - Mother tongue</a></li>
+                            <li><a>Spanish - Mother language</a></li>
                             <li>English - intermediate level</li>
                         </ul>
 
@@ -115,7 +99,7 @@
                             <li>Java</li>
                         </ul>
                         <p>web</p>
-                        <ul  class='none'>
+                        <ul class='none'>
                             <li>HTML 5</li>
                             <li>CSS</li>
                             <li>Bootstrap</li>
@@ -130,7 +114,7 @@
                             <li>SQLite</li>
                         </ul>
                         <p>O.S.</p>
-                        <ul  class='none'>
+                        <ul class='none'>
                             <li>Linux (Server and Desktop)</li>
                             <li>Windows</li>
                         </ul>
@@ -143,18 +127,30 @@
 
                     <div id="section31">
                         <h1>P.I.A.</h1>
-                        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                        <h4>Products and Inventory Administered</h4>
+                        <p>PIA is a little web system to help to the micro and little's businessman to keep and eye in their business's numbers.</p>
+                        <p>we provide a register of your inventory, register of purchases/sales, calculating the profitability and utility of all time, every month and in cycles of 3, 6 and 12 months</p>
+                        <br>
+                        <p>By the moment PIA is in constant development, so, if you wanna get involved, here is the project, it's open source! feel free to contribute!</p>
+                        <a class="btn btn-default" href="https://github.com/Elem3ntal/PIA" target="_blank">GitHub</a>
+                        <a type="button" class="btn btn-info" href="/PIA/"> Enter the Proyect Here!</a>
                     </div>
                     <hr>
                     <div id="section32">
                         <h1>Padron</h1>
-                        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                        <p>All the data of the Chileans (Adults) are public, by the law of "transparency" is accesible, but only one person at the time, or one location at the time, here you can find anyone, all the Chileans are here!</p><br>
+                        <p>Padron 2013, a total of 13.574.110 Registers</p><br>
+                        <p>Padron 2016, a total of 14.376.210 Registers</p>
                     </div>
                     <hr>
 
                     <div id="section4">
                         <h1>Formation</h1>
-                        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                        <ul class='none'>
+                            <li>2017 - Today Instituto Profesional Aiep, Programación y Análisis de Sistemas.</li>
+                            <li>2012 - 2016 Universidad de Santiago de Chile, Ingenieria Civil Informatica.</li>
+                            <li>2010 - 2011 Universidad de Talca, Ingenieria en Bioinformática.</li>
+                        </ul>
                     </div>
                     <hr>
 
@@ -164,14 +160,14 @@
                         <br><p>Best Regards!</p>
                         <br><p>Javier</p>
                         <section id="messageBox">
-                            <p>From: </p><input type = "text" id="email" class = "box" placeholder='email@hosting.com'/>
-                            <br>
-                            <textarea id = "message" rows="4" cols="50" placeholder="your message goes here!"></textarea>
-                            <a class="btn btn-default" onclick="sendMessage();">SEND!</a>
                             <div class="alert alert-success alert-dismissible" id="mensajeEnviado">
                                 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                                 <strong>Succes! </strong>Message has been sent!
                             </div>
+                            <p>From: </p><input type = "text" id="email" class = "box" placeholder='email@hosting.com'/>
+                            <br>
+                            <textarea id = "message" rows="4" cols="50" placeholder="your message goes here!"></textarea>
+                            <a class="btn btn-default" onclick="sendMessage();">SEND!</a>
                             <script>$("#mensajeEnviado").hide();</script>
                         </section>
                     </div>
