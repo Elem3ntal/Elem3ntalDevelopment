@@ -64,11 +64,13 @@ ul.none{
 #message{
     width:100%;
 }
+
 .close{
     display: none;
 }
+
 @media screen and (max-width: 810px) {
-    #section1, #section21, #section22, #section31, #section32, #section4, #section5  {
+    #section1, #section21, #section22, #section31, #section32,#section33, #section4, #section5  {
         margin-left: 150px;
         z-index: 1;
     }
