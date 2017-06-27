@@ -18,4 +18,6 @@ function loadjscssfile(filename, filetype) {
 //
 //SOURCE FILES
 loadjscssfile("/CSS/body.css","css");
-loadjscssfile("/JS/headerMenu.js","js");
+loadjscssfile("/JS/Android.js","js");
+loadjscssfile("/JS/leaveAMessage.js","js");
+loadjscssfile("/JS/registerVisit.js","js");
