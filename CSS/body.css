@@ -22,12 +22,57 @@ CONCHEVINO
     src: url('../Sources/Fonts/texgyreadventor-regular.otf');
 }
 body{
+    left:5px;
+    position: relative;
     font-family: 'Text-Gyre-Adventor-Regular','Roboto', sans-serif;
     color: #1A1A1A;
     background-color: #e5e5e5;
+    width: 98%;
 }
 
 #col-sm-3 {
-    border: 1px solid black;
+    top: 10px;
+    left: 20px;
+    position: relative;
+    border: 1px solid #CCCCCC;
     display: inline-block;
+    vertical-align:bottom;
+    padding: 20px;
+    width: 360px;
+    border-radius: 5px;
 }
+
+ul.none{
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+.tab-content {
+    top: 25px;
+    position: relative;
+    border: 2px solid #CCCCCC;
+    border-radius: 15px;
+}
+
+#navbar {
+    top: 20px;
+    position: relative;
+    width: 100%;
+    background-color: #CCCCCC;
+    border-radius: 15px;
+}
+
+
+#navbar ul li{
+    background-color: #CCCCCC;
+}
+#navbar ul li a:hover {
+    background-color: #E5E5E5;
+}
+#navbar ul li.active a{
+    background-color: #E5E5E5;
+}
+#navbar ul li.active {
+    background-color: #E5E5E5;
+}
+
