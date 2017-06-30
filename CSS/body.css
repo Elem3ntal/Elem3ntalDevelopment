@@ -24,6 +24,7 @@ CONCHEVINO
 body{
     left:5px;
     position: relative;
+    text-align: justify;
     font-family: 'Text-Gyre-Adventor-Regular','Roboto', sans-serif;
     color: #1A1A1A;
     background-color: #e5e5e5;
@@ -76,3 +77,28 @@ ul.none{
     background-color: #E5E5E5;
 }
 
+#Proyect{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+#Proyect h1{
+    position: relative;
+    display: inline-block;
+}
+#Proyect h4{
+    padding-left: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+
+
+#MenuResume {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#Menuhome {
+    padding-left: 10px;
+    padding-right: 10px;
+}
