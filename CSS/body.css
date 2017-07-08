@@ -22,15 +22,48 @@ CONCHEVINO
     src: url('../Sources/Fonts/texgyreadventor-regular.otf');
 }
 body{
-    left:5px;
     position: relative;
     text-align: justify;
     font-family: 'Text-Gyre-Adventor-Regular','Roboto', sans-serif;
     color: #1A1A1A;
     background-color: #e5e5e5;
-    width: 98%;
+}
+/* the Upper!!! */
+#upper{
+    width: 100%;
+    color: #e5e5e5;
+    background-color: #1a1a1a;
+    opacity: 1;
+    animation-name: opacityNormal;
+    animation-duration: 2s;
+}
+#upper:hover{
+    opacity: 0.5;
+    animation-name: opacityHover;
+    animation-duration: 2s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes opacityNormal {
+    from {opacity: 0.6;}
+    to {opacity: 1;}
 }
 
+/* Standard syntax */
+@keyframes opacityNormal {
+    from {opacity: 0.6;}
+    to {opacity: 1;}
+}
+@-webkit-keyframes opacityHover {
+    from {opacity: 1;}
+    to {opacity: 0.6;}
+}
+
+/* Standard syntax */
+@keyframes opacityHover {
+    from {opacity: 1;}
+    to {opacity: 0.6}
+}
+/* perfiles!*/
 #col-sm-3 {
     top: 10px;
     left: 20px;
@@ -101,4 +134,21 @@ ul.none{
 #Menuhome {
     padding-left: 10px;
     padding-right: 10px;
+}
+
+#menu {
+    display: table;
+    width: 100%;
+    padding: 0;
+}
+#menu li{
+    list-style: none;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 25%;
+}
+
+#menu li a{
+    width: 100%;
 }

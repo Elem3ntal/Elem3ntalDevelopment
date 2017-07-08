@@ -22,34 +22,45 @@
 
     <body>
         <div id="Header">
-            <div class="row">
+        <div id="upper">
+            <p id="headerLogo1"><i>Freelance Developer </i><b id="TheConsole">: ~$_</b></p>
+        </div>
+        <div id="Header">
+            <div id="content">
                 <div id="col-sm-3">
-                    <h1>
-                        <img src="Sources/Images/Perfil1280.jpg" class="img-thumbnail img-circle" alt="MeIn1280" width="100" height="100"> About me?
-                    </h1>
+                    <ul id="menu">
+                        <li><img src="Sources/Images/Perfil1280.jpg" class="img-thumbnail img-circle" alt="MeIn1280" width="100" height="100"></li>
+                        <li><h1 class="toRight">About me?</h1>
+                        <p class="toRight">Javier Rodríguez B.</p></li>
+                    </ul>
                 </div>
                 <div id="col-sm-3">
-                    <p>Javier Rodríguez B.</p>
-                    <p><i>Freelance Developer</i></p>
+                    <p>Contact Me!</p>
                     <a id="whatsapp">+56 9 9940 2264</a>
-                    <a>javier08@hotmail.com</a>
-                    <br>
-                    <a class="btn btn-default" role="button" href="https://www.facebook.com/JavierRodriguezBenavente" target="_blank">Facebook</a>
-                    <a class="btn btn-default" href="https://www.linkedin.com/in/javier-rodriguez-66834b70/" target="_blank">LinkedIn</a>
-                    <a class="btn btn-default" href="https://github.com/Elem3ntal" target="_blank">GitHub </a>
-                    <br>
+                    <a class="toRight">javier08@hotmail.com</a>
+                    <ul id="menu">
+                        <li>
+                            <a class="btn btn-default" role="button" href="https://www.facebook.com/JavierRodriguezBenavente" target="_blank">Facebook</a>
+                        </li>
+                        <li>
+                            <a class="btn btn-default" href="https://www.linkedin.com/in/javier-rodriguez-66834b70/" target="_blank">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a class="btn btn-default" href="https://github.com/Elem3ntal" target="_blank">GitHub </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
         <div id="navbar">
-            <ul class="nav nav-tabs nav-justified">
-                <li class="active"><a data-toggle="tab" href="#Menuhome">Home</a></li>
+            <ul id="menu">
+                <li data-toggle="tab" href="#Menuhome"><a>Home</a></li>
                 <li><a data-toggle="tab" href="#MenuResume">Resume</a></li>
                 <li><a data-toggle="tab" href="#MenuEyR">Experience & Proyects</a></li>
                 <li><a data-toggle="tab" href="#MenuFiles">Files</a></li>
             </ul>
         </div>
-        <div class="tab-content">
+        <div id="PanelsContent" class="tab-content">
             <div id="Menuhome" class="tab-pane fade in active">
                 <h3>My Home</h3>
                 <p>Thanks for visit my website, here you can find information about me, like formation and projects, books that i find interesting (in the informatic area) and those type of things; if you have any doubt, contact me!</p>
@@ -210,4 +221,5 @@
         </div>
     </body>
     <script>loadjscssfile("/JS/registerVisit.js","js")</script>
+    <script>loadjscssfile("/JS/timerLogo.js","js")</script>
 </html>
