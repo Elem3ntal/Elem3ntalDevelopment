@@ -18,4 +18,21 @@ function loadjscssfile(filename, filetype) {
 //
 //SOURCE FILES
 loadjscssfile("/CSS/body.css","css");
+loadjscssfile("/CSS/animations.css","css");
 loadjscssfile("/JS/headerMenu.js","js");
+
+$(window).scroll(function(){
+    var a = 170;
+    var pos = $(window).scrollTop();
+    if(pos > a) {
+        $("#navbar").css({
+            position: 'fixed',
+            top:  '2rem'
+        });
+    }
+    else {
+        $("#navbar").css({
+            position: 'relative'
+        });
+    }
+});

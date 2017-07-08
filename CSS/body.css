@@ -28,40 +28,69 @@ body{
     color: #1A1A1A;
     background-color: #e5e5e5;
 }
+
+/*Remover efectos especiales de los A*/
+a, a:link, a:visited, a:hover {
+    text-decoration: none;
+}
+
 /* the Upper!!! */
 #upper{
+    z-index: 100;
+    top:0;
+    height: 2rem;
+    font-size: 1.3rem;
+    position: fixed;
     width: 100%;
     color: #e5e5e5;
     background-color: #1a1a1a;
-    opacity: 1;
     animation-name: opacityNormal;
     animation-duration: 2s;
 }
 #upper:hover{
-    opacity: 0.5;
     animation-name: opacityHover;
     animation-duration: 2s;
 }
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes opacityNormal {
-    from {opacity: 0.6;}
-    to {opacity: 1;}
+#upper #headerLogo1{
+    margin-left: 0.5rem;
+}
+/*header!!*/
+#header{
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+#header #content div{
+    height: 13rem;
+}
+#navbar {
+    z-index: 99;
+    width: 100%;
+    background-color: #CCCCCC;
+    height: 4rem;
 }
 
-/* Standard syntax */
-@keyframes opacityNormal {
-    from {opacity: 0.6;}
-    to {opacity: 1;}
+#navbar ul li{
+    text-align: center;
+    vertical-align: middle;
+    height: 4rem;
 }
-@-webkit-keyframes opacityHover {
-    from {opacity: 1;}
-    to {opacity: 0.6;}
+#navbar ul li a{
+    border-color: transparent;
+    border-style: solid;
+    border-width: 10px;
+    font-size: 2rem;
 }
-
-/* Standard syntax */
-@keyframes opacityHover {
-    from {opacity: 1;}
-    to {opacity: 0.6}
+#navbar ul li.active{
+    background-color: #E5E5E5;
+    text-shadow: 0 0 20px #CCCCCC;
+}
+#navbar ul li.active a{
+    color: #1a1a1a;
+    background-color: #E5E5E5;
+    text-shadow: 0 0 15px #666666;
+}
+#navbar ul li:hover{
+    text-shadow: 0 0 10px white;
 }
 /* perfiles!*/
 #col-sm-3 {
@@ -72,42 +101,18 @@ body{
     display: inline-block;
     vertical-align:bottom;
     padding: 20px;
-    width: 360px;
+    width: 49%;
     border-radius: 5px;
 }
-
 ul.none{
     list-style-type: none;
     margin-left: 20px;
 }
 
 .tab-content {
-    top: 25px;
     position: relative;
     border: 2px solid #CCCCCC;
     border-radius: 15px;
-}
-
-#navbar {
-    top: 20px;
-    position: relative;
-    width: 100%;
-    background-color: #CCCCCC;
-    border-radius: 15px;
-}
-
-
-#navbar ul li{
-    background-color: #CCCCCC;
-}
-#navbar ul li a:hover {
-    background-color: #E5E5E5;
-}
-#navbar ul li.active a{
-    background-color: #E5E5E5;
-}
-#navbar ul li.active {
-    background-color: #E5E5E5;
 }
 
 #Proyect{
@@ -124,8 +129,6 @@ ul.none{
     display: inline-block;
 }
 
-
-
 #MenuResume {
     padding-left: 15px;
     padding-right: 15px;
@@ -139,7 +142,6 @@ ul.none{
 #menu {
     display: table;
     width: 100%;
-    padding: 0;
 }
 #menu li{
     list-style: none;
