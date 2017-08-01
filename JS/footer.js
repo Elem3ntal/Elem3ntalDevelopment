@@ -14,8 +14,18 @@ function IPofVisit(){
   xmlhttp.open("GET", "/PHP/IP.php", true);
   xmlhttp.send();
 }
+function getLocation(){
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("locationFooter").innerHTML = this.responseText;
+    }
+  };
+  xmlhttp.open("GET", "/PHP/currentIP.php", true);
+  xmlhttp.send();
+}
 $(document).ready(function(){
   IPofVisit();
+  getLocation();
   document.getElementById("navResolution").innerHTML=currentSize();
   document.getElementById("screenRes").innerHTML=screenRes();
 });

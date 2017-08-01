@@ -7,9 +7,7 @@ function registerVisit(){
    }
    xmlhttp.onreadystatechange=function() {
       if (this.readyState==4 && this.status==200) {
-         retorno = this.responseText;
-      }
-      else{
+         this.responseText;
       }
    }
    xmlhttp.open("GET","/PHP/registerVisit.php",true);
@@ -24,12 +22,11 @@ function numberOfVisit(){
    }
    xmlhttp.onreadystatechange=function() {
       if (this.readyState==4 && this.status==200) {
-         retorno = this.responseText;
-         document.getElementById("numberOfVisit").innerHTML = "you are the visit number "+retorno;
+         document.getElementById("visitNumber").innerHTML = this.responseText;
       }
    }
    xmlhttp.open("GET","/PHP/numberOfVisit.php",true);
    xmlhttp.send();
 }
-registerVisit();
 numberOfVisit();
+registerVisit();

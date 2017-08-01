@@ -27,13 +27,19 @@ $(window).scroll(function(){
     if(pos > a) {
         $("#navbar").css({
             position: 'fixed',
-            top:  '2rem'
+            top:  '2rem',
+        });
+        $("#PanelsContent").css({
+            marginTop: '5rem'
         });
     }
     else {
         $("#navbar").css({
             position: 'relative',
             top:  '0rem'
+        });
+        $("#PanelsContent").css({
+            marginTop: '0rem'
         });
     }
 });

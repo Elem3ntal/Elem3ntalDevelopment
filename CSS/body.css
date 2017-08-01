@@ -65,6 +65,7 @@ a, a:link, a:visited, a:hover {
     z-index: 99;
     background-color: #CCCCCC;
     height: 4rem;
+    width: 100%;
 }
 
 #navbar ul li{
