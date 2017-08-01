@@ -15,7 +15,7 @@
         <title>Elem3ntal Development</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="/JS/firstSources.js"></script>
     </head>
@@ -25,7 +25,7 @@
             <p id="headerLogo1"><i>Freelance Developer </i><b id="TheConsole">: ~$_</b></p>
         </div>
         <div id="header">
-            <div id="content">
+            <div class="menu">
                 <div id="col-sm-3">
                     <ul id="menu">
                         <li><img src="Sources/Images/Perfil1280.jpg" class="img-thumbnail img-circle" alt="MeIn1280" width="100" height="100"></li>
@@ -67,8 +67,7 @@
                 <h3>My Home</h3>
                 <p>Thanks for visit my website, here you can find information about me, like formation and projects, books that i find interesting (in the informatic area) and those type of things; if you have any doubt, contact me!</p>
                 <p id="numberOfVisit"></p> <br>
-                <p id="screenRes"></p><br>
-                <p id="IPvisit"></p><br>
+                <p id=""></p><br>
                 <script>loadjscssfile("/JS/ExtraData.js","js")</script>
                 <div id="section5">
                     <h4>Leave a Message</h4>
@@ -88,7 +87,6 @@
                         <a class="btn btn-default" onclick="sendMessage();">SEND!</a>
                         <script>
                             $("#mensajeEnviado").hide();
-
                         </script>
                     </section>
                 </div>
@@ -221,7 +219,11 @@
                 </ul>
             </div>
         </div>
+        <div id="footer">
+            <p><i>info about you, ip: </i><b id="IPvisit"></b><i>, location: </i><i>, screen resolution: </i><b id="screenRes"></b><i>, navigator resolution: </i><b id="navResolution"></b><i>, visit N°: </i></p>
+        </div>
     </body>
-    <script>loadjscssfile("/JS/registerVisit.js","js")</script>
-    <script>loadjscssfile("/JS/timerLogo.js","js")</script>
+    <script>loadjscssfile("/JS/registerVisit.js","js");</script>
+    <script>loadjscssfile("/JS/timerLogo.js","js");</script>
+    <script>loadjscssfile("/JS/footer.js","js");</script>
 </html>

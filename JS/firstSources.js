@@ -32,7 +32,9 @@ $(window).scroll(function(){
     }
     else {
         $("#navbar").css({
-            position: 'relative'
+            position: 'relative',
+            top:  '0rem'
         });
     }
 });
+//PanelsContent margin-top: 10rem;

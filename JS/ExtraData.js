@@ -14,13 +14,7 @@ function numberOfVisit(){
     xmlhttp.open("GET","/PHP/currentIP.php",true);
     xmlhttp.send();
 }
-function screenRes(){
-    var width = screen.width;
-    var height = screen.height;
-    document.getElementById("screenRes").innerHTML = "Your screen is: " + width + " x " +height;
-}
 function extraData(){
-    $("#IPvisit").load('/PHP/currentIP.php');
+    //$("#IPvisit").load('/PHP/currentIP.php');
 }
-screenRes();
 extraData();

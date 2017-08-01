@@ -1,4 +1,4 @@
-function openNav() {
+/*function openNav() {
     var width = window.innerWidth;
     if(width<770){
         document.getElementById("headerMenu").style.width = "250px";
@@ -20,4 +20,5 @@ $(window).resize(function() {
     else{
         document.getElementById("headerMenu").style.width="0px";
     }
-})
+});
+*/

@@ -56,15 +56,13 @@ a, a:link, a:visited, a:hover {
 }
 /*header!!*/
 #header{
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
-}
-#header #content div{
-    height: 13rem;
+    position: relative;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
 }
 #navbar {
+    margin-bottom: 5px;
     z-index: 99;
-    width: 100%;
     background-color: #CCCCCC;
     height: 4rem;
 }
@@ -94,8 +92,6 @@ a, a:link, a:visited, a:hover {
 }
 /* perfiles!*/
 #col-sm-3 {
-    top: 10px;
-    left: 20px;
     position: relative;
     border: 1px solid #CCCCCC;
     display: inline-block;
@@ -110,6 +106,9 @@ ul.none{
 }
 
 .tab-content {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 4rem;
     position: relative;
     border: 2px solid #CCCCCC;
     border-radius: 15px;
@@ -153,4 +152,21 @@ ul.none{
 
 #menu li a{
     width: 100%;
+}
+#footer{
+    height: 1.9rem;
+    z-index: 100;
+    font-size: 1.3rem;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    background-color: #1A1A1A;
+    color: #e5e5e5;
+    display: table;
+    animation-name: opacityNormal;
+    animation-duration: 2s;
+}
+#footer:hover{
+    animation-name: opacityHover;
+    animation-duration: 2s;
 }
