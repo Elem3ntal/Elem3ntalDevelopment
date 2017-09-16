@@ -171,3 +171,12 @@ ul.none{
     animation-name: opacityHover;
     animation-duration: 2s;
 }
+
+#Files{
+    padding: 0;
+    overflow: hidden;
+}
+#Files li{
+    margin-bottom: 1rem;
+    border-left: dotted;
+    }
